@@ -16,7 +16,7 @@ Line_Channel_Access_Token='YJIsZbfckdYHnzRky18KwXsUTG6BpuoW2CbTmMbN8d0mjOZVAgilQ
 Line_Channel_Secret='d305cbeb1f356533d1db5ce07081cf27'
 
 from flask import Flask, request, abort
-#from pyngrok import ngrok
+from pyngrok import ngrok
 from linebot import (
     LineBotApi, WebhookHandler
 )
