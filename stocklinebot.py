@@ -140,8 +140,8 @@ def stockclose_response(user_input):
     return todayPriceC
 
 if __name__ == "__main__":
-  #public_url = ngrok.connect(5000, bind_tls=True)
-  #print("Tracking URL:", public_url)
-  #x = threading.Thread(target=auto_update_webhook_url)
-  #x.start()
+  public_url = ngrok.connect(5000, bind_tls=True)
+  print("Tracking URL:", public_url)
+  x = threading.Thread(target=auto_update_webhook_url)
+  x.start()
   app.run()
