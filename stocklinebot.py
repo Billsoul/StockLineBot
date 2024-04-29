@@ -145,4 +145,5 @@ if __name__ == "__main__":
   #print("Tracking URL:", public_url)
   #x = threading.Thread(target=auto_update_webhook_url)
   #x.start()
-  app.run()
+  #app.run()
+  app.run(port=8080)
