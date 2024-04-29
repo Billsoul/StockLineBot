@@ -146,4 +146,4 @@ if __name__ == "__main__":
   #x = threading.Thread(target=auto_update_webhook_url)
   #x.start()
   #app.run()
-  app.run(port=80)
+  app.run(host='0.0.0.0', port=80)
