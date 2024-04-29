@@ -11,7 +11,7 @@ Original file is located at
 #!pip install line-bot-sdk
 
 #!ngrok authtoken 2fBIuRa6RZxUgFJF032HEXCYbES_4Kn5KsS5WbTUwZwzCkJvL #你自己的ngrok Token
-./ngrok authtoken 2fBIuRa6RZxUgFJF032HEXCYbES_4Kn5KsS5WbTUwZwzCkJvL
+#./ngrok authtoken 2fBIuRa6RZxUgFJF032HEXCYbES_4Kn5KsS5WbTUwZwzCkJvL
 #StockBot_01
 Line_Channel_Access_Token='YJIsZbfckdYHnzRky18KwXsUTG6BpuoW2CbTmMbN8d0mjOZVAgilQfzWjTn4jdfAc+gd1yYy1LKbfubnEYDB0phYOZdq93gjAfPanniTJSC29B/R9Gu9XuadTO+aT3KmZ/onslv+dirMClU72klXBgdB04t89/1O/w1cDnyilFU='
 Line_Channel_Secret='d305cbeb1f356533d1db5ce07081cf27'
@@ -141,8 +141,8 @@ def stockclose_response(user_input):
     return todayPriceC
 
 if __name__ == "__main__":
-  public_url = ngrok.connect(5000, bind_tls=True)
-  print("Tracking URL:", public_url)
-  x = threading.Thread(target=auto_update_webhook_url)
-  x.start()
+  #public_url = ngrok.connect(5000, bind_tls=True)
+  #print("Tracking URL:", public_url)
+  #x = threading.Thread(target=auto_update_webhook_url)
+  #x.start()
   app.run()
